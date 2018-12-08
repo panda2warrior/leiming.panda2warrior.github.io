@@ -24,6 +24,27 @@ multilingual: true
     {{ about_en | markdownify }}
 </div>
 
+<!-- Gitalk 评论 start  -->
+
+<!-- Link Gitalk 的支持文件  -->
+<link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css">
+<script src="https://unpkg.com/gitalk@latest/dist/gitalk.min.js"></script> 
+<div id="gitalk-container"></div>     <script type="text/javascript">
+    var gitalk = new Gitalk({
+
+    // gitalk的主要参数
+        clientID: `e7476de5c26246ca708c`,
+        clientSecret: `b284e61e2a3f723296edbf9f9ce248cd5b8de107`,
+        repo: `albert-leiming-du.github.io`,
+        owner: 'albert-leiming-du',
+        admin: ['albert-leiming-du'],
+        id: 'about_id',
+    
+    });
+    gitalk.render('gitalk-container');
+</script> 
+<!-- Gitalk end -->
+
 
 {% if site.disqus_username %}
 <!-- disqus 评论框 start -->
