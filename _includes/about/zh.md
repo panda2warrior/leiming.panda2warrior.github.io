@@ -1,24 +1,10 @@
-> 写写代码，做做设计，  
-> 离开世界之前，一切都是过程。
+> We are always the dust inside the universe to chagne the world.  
 
-Hey，我是黄玄，病毒种，进化程度不明，多出没于[博客](https://huangxuan.me)、[微博](weibo.com/huxpro)、[知乎](https://www.zhihu.com/people/huxpro/pins/posts)、[Twitter](https://twitter.com/Huxpro/)、[Github](http://github.com/huxpro)、[Medium](https://medium.com/@Huxpro) 等地带，绝招尚在开发中。
+Hi, 我是杜雷鸣，英文名Albet，[Albert Future Lab](https://albert-leiming-du.github.io)创始人，多年混迹于[博客](https://albert-leiming-du.github.io)、[知乎](https://www.zhihu.com/people/albert.leiming.du)、[Twitter](https://twitter.com/albert_leiming)、[Github](https://github.com/albert-leiming-du)等社交媒体，常年在啥叫媒体上制造信息垃圾。
 
-职业是软件工程师，[Web 工会](https://medium.com/ben-and-dion/team-web-3315aa447fb2#.359a9c6cl)活跃成员。目前在 [Facebook](https://www.facebook.com/) 写 [Reason](https://reasonml.github.io/) 与 [Messenger.com](http://messenger.com/) ，曾被招募为淘宝网 · [阿里旅行](http://alitrip.com)前端工程师、微影时代 · [微票儿](http://www.wepiao.com/?r=movie)前端基础工程团队负责人、[饿了么](https://ele.me/) · 大前端团队 · [PWA 顾问](https://medium.com/elemefe/upgrading-ele-me-to-progressive-web-app-2a446832e509)。
+现在在[新加坡科技设计大学](https://sutd.edu.sg/)搬NLP方向的砖，主要研究情感分析，词的特征表达和智能问答，对图像方向有所涉及。主要编程语言为python, C++，主要使用tensorflow, keras, dynet等框架。曾在[中国南方电网](http://www.csg.cn/)工作。
 
-一些作品和开源软件项目，👉 戳 [Portfolio](/portfolio)、[Github](http://github.com/huxpro)、[演说.io](https://zhuanlan.zhihu.com/p/21280918)。 
-
-
-##### Talks
-
-- [Upgrading to Progressive Web Apps][9] · [JSConf CN 上海 2017](http://2017.jsconf.cn/)
-- Building Progressive Web Apps · [CSDI 广州 2017](http://www.csdisummit.com/)
-- The State of Progressive Web App · GDG IO Redux 北京 2017
-- 炒冷饭 · PWA 到底是个什么玩意？· Baidu HQ 北京 2017
-- [Service Worker 101][5] · GDG DevFest 北京 2016
-- [Progressive Web App，复兴序章][4] · [QCon 上海 2016](http://2016.qconshanghai.com/presentation/3111)
-- Progressive Web App 之我见 · GDG IO Redux 北京 2016
-- [CSS Still Sucks 2015][2] · 2015
-- [JavaScript 模块化七日谈][1] · 2015
+目前在创造和维护的开源项目叫[OpenSentiment](https://github.com/AlbertFutureLab/OpenSentiment), 旨在集成不同的情感分析框架，有兴趣的可以[发邮件到](duleimingdo@gmail.com)联系，期待有识之士共同维护此框架。
 
 [1]: //huangxuan.me/2015/07/09/js-module-7day/
 [2]: //huangxuan.me/2015/12/28/css-sucks-2015/
