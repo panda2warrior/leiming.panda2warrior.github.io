@@ -78,7 +78,7 @@ ga_domain: None
 
 # Sidebar settings
 sidebar: true                           # whether or not using Sidebar.
-sidebar-about-description: "Please say hello universe instead of hello world"
+sidebar-about-description: "Albert·Leiming·Du, a coder working on NLP, Machine Learning, Deep Learning and a little CV."
 sidebar-avatar: /img/personal_photo/leiming.jpg     # use absolute URL, seeing it's used in both `/` and `/about/`
 
 
