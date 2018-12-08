@@ -1,25 +1,11 @@
+> We are always the dust inside the universe to chagne the world. 
 
 
-> Yet another man.
+This is Albert·Leiming·Du, a coder who is working on NLP research, the founder of [Albert Future Lab](https://albert-leiming-du.github.io). I graduated from [Xi'an Jiaotong University](https://en.wikipedia.org/wiki/Xi%27an_Jiaotong_University) in 2014. Then I worked in [China Southern Power Grid](https://en.wikipedia.org/wiki/China_Southern_Power_Grid) as an electrical engineer for more than three years. Now I am working at [Singapore University of Technology and Design](https://en.wikipedia.org/wiki/Singapore_University_of_Technology_and_Design) as a researcher on Natural Language Processing field. My main insterets are Sentiment Analyasis, Word Representation and Question Answering System. I mainly write the code with ptyhton && C++, build the model with tensorflow, keras and dynet.
 
+At most time, I am hanging around on some major social networks, like [Blog](https://albert-leiming-du.github.io)、[Zhihu](https://www.zhihu.com/people/albert.leiming.du)、[Twitter](https://twitter.com/albert_leiming)、[Github](https://github.com/albert-leiming-du). I keep making some binary garbage to waste the server and electricity resource.
 
-Hi, I am *@huxpro* (Huang, Xuan), a software engineer & a designer. I am currently working on [Reason](https://reasonml.github.io/) and [Messenger.com](http://messenger.com/) at [Facebook](https://www.facebook.com/). I previously worked as Web Front-End Engineer at [Alibaba Trip](https://www.alitrip.com/); Web Front-End Infrastructure Team Lead at [Wepiao.com](https://www.crunchbase.com/organization/wepiao#/entity); And [Invited Consultant on PWA]((https://medium.com/elemefe/upgrading-ele-me-to-progressive-web-app-2a446832e509)) at [Ele.me](https://github.com/elemefe/).
-
-I studied Digital Media Art and graduated from [Communication University of China](https://en.wikipedia.org/wiki/Communication_University_of_China) by 2016, and am studying Computer Science at [Rochester Institute of Technology](https://en.wikipedia.org/wiki/Rochester_Institute_of_Technology) from 2017.
-
-
-##### Talks
-
-- [Upgrading to Progressive Web Apps][9] · [JSConf China Shanghai 2017](http://2017.jsconf.cn/)
-- Building Progressive Web Apps · [CSDI Guangzhou 2017](http://www.csdisummit.com/)
-- The State of Progressive Web App · GDG IO Redux Beijing 2017
-- PWA Rehashing · Baidu HQ Beijing 2017
-- [Service Worker 101][5] · GDG DevFest Beijing 2016
-- [Progressive Web Apps][4] · QCon Shanghai 2016
-- Progressive Web App in my POV · GDG IO Redux Beijing 2016
-- [CSS Still Sucks 2015][2] · 2015
-- [JavaScript Modularization Journey][1] · 2015
-
+I have built the opensource project called [OpenSentiment](https://github.com/AlbertFutureLab/OpenSentiment), to integrate some useful Sentiment Analyasis Structure for some common usage and keep maintaining. If you have any interests or problems about it, please feel free to drop me an [email](duleimingdo@gmail.com).
 
 
 [1]: //huangxuan.me/2015/07/09/js-module-7day/
