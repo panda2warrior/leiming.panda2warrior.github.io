@@ -13,6 +13,8 @@ tags:
 
 > “This is the first blog.”
 
+> 本站文章均为原创，转载请注明出处。
+
 
 ## 前言
 
