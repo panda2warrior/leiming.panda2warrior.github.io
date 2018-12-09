@@ -77,14 +77,14 @@ model.predict(val_data, batch_size=10)
 model.predict(val_dataset, steps=10)
  ```
 上述代码即为tf.Sequential()的一般使用方式，即：
-```mermaid
+
 graph LR
-A[建立数据pipeline] --> B[建立模型,add]
-B --> C[compile 模型]
-C --> D[训练模型, fit]
-D --> E[Evaluate模型]
-E --> F[Predict模型]
-```
+	A[建立数据pipeline] --> B[建立模型,add]
+	B --> C[compile 模型]
+	C --> D[训练模型, fit]
+	D --> E[Evaluate模型]
+	E --> F[Predict模型]
+
 代码中出现了两种数据pipeline的建立方式，不同的数据pipeline方式下需采取不同的策略和调用方法。
 ***
 ### numpy 输入
