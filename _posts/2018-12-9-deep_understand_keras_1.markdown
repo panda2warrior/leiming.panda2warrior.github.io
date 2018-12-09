@@ -116,7 +116,7 @@ import numpy as np
 
 inputs = tf.keras.Input(shape=(32,))  # Returns a placeholder tensor
 
-# A layer instance is callable on a tensor, and returns a tensor.
+#A layer instance is callable on a tensor, and returns a tensor.
 x = tf.keras.layers.Dense(64, activation='relu')(inputs)
 
 x = x + x  # ！！！！This fucntion would not work.！！！！
