@@ -76,17 +76,10 @@ model.predict(val_data, batch_size=10)
 #Predict with tf.data data
 model.predict(val_dataset, steps=10)
  ```
-上述代码即为tf.Sequential()的一般使用方式，即：
-
-graph LR
-	A[建立数据pipeline] --> B[建立模型,add]
-	B --> C[compile 模型]
-	C --> D[训练模型, fit]
-	D --> E[Evaluate模型]
-	E --> F[Predict模型]
+上述代码即为tf.Sequential()的一般使用方式, 一般的使用步骤包括建立pipeline, add模型，compile模型，训练模型(model.fit)，评估模型(model.evaluate),预测模型（model.predict)。
 
 代码中出现了两种数据pipeline的建立方式，不同的数据pipeline方式下需采取不同的策略和调用方法。
-***
+* * *
 ### numpy 输入
 1. 使用numpy 建立的输入在fit的时候需要使用`model.fit(x=data, y=label)`方式进行数据输入。
 2. 使用model.fit的时候必须设置**epochs**和**batch_size**参数。 
@@ -96,7 +89,8 @@ graph LR
 #### tf.keras对numpy数据的实际处理方式
 1. tf.keras.Sequential() 模块继承了tf.keras.Model()模块，tf.keras.Sequential()初始化之后，在使用**第一次**调用`model.add()`添加层的时候，如果有`tf.keras.layers.Input()`模块作为第一层，则会使用此层的输入来初始化整个model的输入，整个model的输入的shape由此input层决定。model的输出由最后一层的输出决定。对应到底层就是在图中建立输入和输出节点。
 2. 如果没有`tf.keras.layers.Input()`模块作为第一层，则会在调用`model.fit(data, label)`的时候，会调用`self.self._standardize_user_data(data, label)`函数设置模型的输入节点，输入节点为相同shape的`tf.placeholder`。输出节点则会在调用compile函数的时候进行设置。
-***
+
+* * *
 ### tf.data 输入
 1. 使用`tf.data`设置输入的时候，调用`model.fit(x=dataset, y=None)`进行数据输入。
 2. 使用model.fit的时候需设置**steps_per_epoch**参数，从而确定一个batch的范围。
@@ -106,7 +100,8 @@ tf.data.TFRecordDataset()`进行数据的读取。
 #### tf.keras对tf.data数据的实际处理方式
 1. 对layer的处理方式与上一节numpy的处理方式相同。
 2. 在调用`model.fit(data, label)`的时候，会调用`self.self._standardize_user_data(data, label)`函数设置模型的输入节点, 会将此tf.data(tensor)作为network的input节点。此处不涉及重新建立`tf.placeholder`节点，用的是原生的tf.data的tensor节点。
-***
+
+* * *
 ## 3.2 tf.keras函数式模型
 上一节介绍了采用tf.Sequential()进行添加层的模型，本节介绍使用tf.keras.Model()产生的函数式模型。
 基本代码如下：
@@ -137,10 +132,11 @@ model.fit(data, label, batch_size=32, epochs=5)
 #Train with tf.dada
 model.fit(dataset, steps_per_epoch=10, validation_data=val_dataset)
 ```
-***
+* * *
 ### 函数式编程的特点：
 1. 使用函数式编程更加灵活，但需要提前定义输入的shape，即使用`tf.keras.layers.Input()`定义输入模型。
 2. 函数式编程中，每一层只能是继承`tf.layers.Layer()`的函数，否则会导致模型无法通过编译。诸如代码中`x=x+x`的函数将无法通过编译。
+
 ### 函数式编程的原理:
 代码中的`tf.keras.Model()`实际上继承的是`tf.keras.Network()`模块，`inputs=inputs, outputs=outputs`会作为**变长参数**传递给Network模块的初始化函数，在Network模块的初始化过程中，inputs和outputs的shape会被解析，进而利用inputs和outputs的shape定义图的输入和输出节点。
 具体设计的源码为：
@@ -163,10 +159,11 @@ class Network(base_layer.Layer):
       # Subclassed network
       self._init_subclassed_network(**kwargs)
 ```
-***
+* * *
 # 4. 总结：
 1. 使用线性模型，现阶段只支持单输入模型，即输入只能以一个numpy array或者Tensor的模式，无法传递tuple模式的输入。
-2. tf.keras可以使用`tf.keras.layers.Input()`定义输入节点，也可以不定义，在传入数据使用`model.fit()`根据输入数据的类型和shape定义图中的输入和输出节点。
+2. tf.keras可以使用`tf.keras.layers.Input()`定义输入节点，也可以不定义，在传入数据使用`model.fit()`根据输入数据的类型和shape定义图中的输入和输出节点。归根结底是利用提前设置好的inputs和outputs的shape在图内同样shape的输入和输出节点的placeholder,最终在fit的时候实现数组的feed。
+3. 关于使用Tensor作为输入和输出，笔者会在后序系列中专门剖析keras如何实现这些操作。
 
 -----------Leiming 2018-12-09 于SG
 
